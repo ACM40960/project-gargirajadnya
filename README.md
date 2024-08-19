@@ -5,8 +5,12 @@
 The repository explores various methodologies and technologies that contribute to the exploration if image aesthetics affect the engagement of the photo on social media.  
 ## Description
 One of the most important and possible factors affecting user engagement on social networking sites is the aesthetic quality of photographs. The combination of **Deep Learning, Neural Networks** enables the development of an automated system for evaluating the effects and enagement predictability of images. This system provides dependable insights for optimizing content.
-## Data used
-Web scraping of images from social media platform using tools/website like Apify. Chosen type of data were food images. Extracted dataset contained around 1600 observations with different variables like:-
+## Authors
+Raj Navalakha - 23205373
+
+Gargi Rajadnya - 23200711
+## Data Extraction
+Dataset obtained through web scraping (social media platform) using tools/website like Apify. Chosen type of data were food images. Extracted dataset contained around 1600 observations with different variables like:-
 1. Shortcode - id for the dataset.
 2. Likes count
 3. Comments count
