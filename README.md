@@ -11,8 +11,9 @@ One of the most important and possible factors affecting user engagement on soci
 [Gargi Rajadnya - 23200711](https://github.com/gargirajadnya)
 
 ## Project workflow
+![image](https://github.com/user-attachments/assets/ebeef4bb-bb61-4df3-a67a-66d49ff1eb2f)
 
-### Data Extraction
+#### Data Extraction
 Dataset obtained through web scraping (social media platform) using tools/website like Apify. Chosen type of data were food images. Extracted dataset contained around 1600 observations with different variables like:-
 1. Shortcode - id for the dataset.
 2. Likes count
@@ -20,12 +21,13 @@ Dataset obtained through web scraping (social media platform) using tools/websit
 4. caption
 5. hashtags
 
-### Preprocessing: 
+#### Preprocessing (Script 1): 
 Key libraries used:
 1. Pandas for numerical data manipulation
 2. NumPy for numerical operations
 3. OpenCV and PIL for image processing
 
+Preprocessing
 1. Standardize column names
 2. Check and address missing values (replace empty hashtags with 'NA')
 3. Convert timestamps to a readable format
@@ -37,23 +39,32 @@ Key libraries used:
 Image data is obtained from the URLs in the dataset. This data undergoes preprocessing and analysis with essential Python libraries. 
 Different image attributes, including sharpness, exposure, colorfulness, vibrancy, symmetry, line detection, and composition, are assessed. These attributes are computed and recorded in a DataFrame, which is subsequently combined with the original dataset for thorough analysis.
 
-
-### Exploration and Manipulation
+#### Exploration and Manipulation (Script 2):
 Explored Target Variable,  and the correlation among numerical predictor variables was examined. VIF scores were calculated to assess multicollinearity among the predictors, and a pairplot was used to check for linear relationships between the target and predictor variables.
 
 Feature engineering was carried out, including one-hot encoding for color names in the dataset. Box plots and the IQR method were employed to identify and remove outliers.
 
 To address class imbalance, data sampling techniques were applied. Bootstrap sampling was used to balance class distribution, and upsampling was performed to increase the size of minority classes to match that of the majority class.
 
-### Models used for prediction
+#### Models used for prediction (Script 3)
+
+The predictor variables were standardized, and the engagement metrics feature was split into a binary target variable to formulate a classification problem. The following models were used for prediction:
+
 1. Logistic Regression
-2. SVC - Support Vector Classification
+2. SVC (Support Vector Classification)
 3. Decision Tree
 4. Random Forest
-5. XGBoost - Extreme Gradient Boosting
-6. MLP - Multi-Layer Perceptron
+5. XGBoost (Extreme Gradient Boosting)
+6. MLP (Multi-Layer Perceptron)
 
-Utilizing the machine learning and deep learning models mentioned above, we successfully improved the accuracy of all models in predicting the engagement dynamics for each image in the dataset. Additionally, the implementation of these models involved relevant Python libraries, including **Torch, Seaborn, SkLearn, PIL and TensorFlow**. (Evaluation metrics used are accuracy, F1 score, AUC-ROC curve and confsuion matrix for visualisations.)
+For the MLP model, features were extracted from a trained CNN and combined with the previously engineered features in script 1 for further use. By applying the mentioned machine learning and deep learning models, the accuracy of all models in predicting engagement dynamics for each image in the dataset was improved. Relevant Python libraries used in the implementation included Torch, Seaborn, SkLearn, PIL, and TensorFlow. 
+
+#### Evaluation:
+Evaluation metrics including accuracy, F1 score, AUC-ROC curve, and confusion matrix were employed to assess and visualize model performance. After reviewing all aspects and balancing the outcomes, XGBoost and MLP showed satisfactory results, though MLP displayed some indications of overfitting. The results could be further improved with higher-quality data, a larger dataset, and potentially exploring alternative methods for handling class imbalance, such as the Synthetic Minority Oversampling Technique (SMOTE).
+
+## Scope
+This approach could evolve into predicting overall engagement metrics by considering all variables (like caption-sentiment analysis, caption language, no. of hashtags, etc) influencing engagement alongside image aesthetics.
+
 
 ## Tools 
 Tools used to implement the project were Python, VSCode to integrate the scripts and Github to track the changes and commits made during the project.
