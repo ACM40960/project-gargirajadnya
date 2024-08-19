@@ -12,17 +12,26 @@ One of the most important and possible factors affecting user engagement on soci
 
 ## Project workflow
 
-### Preprocessing: 
-
-
-## Data Extraction
+### Data Extraction
 Dataset obtained through web scraping (social media platform) using tools/website like Apify. Chosen type of data were food images. Extracted dataset contained around 1600 observations with different variables like:-
 1. Shortcode - id for the dataset.
 2. Likes count
 3. Comments count
 4. caption
 5. hashtags
-## Models used for prediction
+
+### Preprocessing: 
+Image data is obtained from the URLs in the dataset. This data undergoes preprocessing and analysis with essential Python libraries. Pandas is used for manipulating numerical features, numpy handles numerical operations, and image processing is carried out using opencv and PIL.
+Different image attributes, including sharpness, exposure, colorfulness, vibrancy, symmetry, line detection, and composition, are assessed. These attributes are computed and recorded in a DataFrame, which is subsequently combined with the original dataset for thorough analysis.
+standadize column names
+Checked for missing values
+replacing empty hashtags with 'NA'
+consistency, and timestamps are converted to a readable datetime format
+
+### Manipulation
+
+
+### Models used for prediction
 1. Logistic Regression
 2. SVC - Support Vector Classification
 3. Decision Tree
