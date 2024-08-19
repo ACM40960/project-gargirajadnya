@@ -38,8 +38,12 @@ Image data is obtained from the URLs in the dataset. This data undergoes preproc
 Different image attributes, including sharpness, exposure, colorfulness, vibrancy, symmetry, line detection, and composition, are assessed. These attributes are computed and recorded in a DataFrame, which is subsequently combined with the original dataset for thorough analysis.
 
 
-### Manipulation
+### Exploration and Manipulation
+Explored Target Variable,  and the correlation among numerical predictor variables was examined. VIF scores were calculated to assess multicollinearity among the predictors, and a pairplot was used to check for linear relationships between the target and predictor variables.
 
+Feature engineering was carried out, including one-hot encoding for color names in the dataset. Box plots and the IQR method were employed to identify and remove outliers.
+
+To address class imbalance, data sampling techniques were applied. Bootstrap sampling was used to balance class distribution, and upsampling was performed to increase the size of minority classes to match that of the majority class.
 
 ### Models used for prediction
 1. Logistic Regression
