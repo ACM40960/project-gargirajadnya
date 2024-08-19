@@ -9,6 +9,12 @@ One of the most important and possible factors affecting user engagement on soci
 Raj Navalakha - 23205373
 
 Gargi Rajadnya - 23200711
+
+## Project workflow
+
+### Preprocessing: 
+
+
 ## Data Extraction
 Dataset obtained through web scraping (social media platform) using tools/website like Apify. Chosen type of data were food images. Extracted dataset contained around 1600 observations with different variables like:-
 1. Shortcode - id for the dataset.
@@ -28,17 +34,8 @@ Utilizing the machine learning and deep learning models mentioned above, we succ
 
 ## Tools 
 Tools used to implement the project were Python, VSCode to integrate the scripts and Github to track the changes and commits made during the project.
-
-
-## Project workflow
-
-### Preprocessing: 
-  
-
-
-  
  
- ## Try out our codes ;)
+## Try out our codes ;)
   1) env_math_mod.yml is the YAML file used to create a python environment and to manage and keep a track of all the libraries. And conda env create —f env_math_mod.yml to create and launch the environemnt in your local machine.
   2) To run the scripts:
      i) 1_preprocessing.py: Data preprocessing
