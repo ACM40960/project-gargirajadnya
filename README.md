@@ -6,9 +6,9 @@ The repository explores various methodologies and technologies that contribute t
 ## Description
 One of the most important and possible factors affecting user engagement on social networking sites is the aesthetic quality of photographs. The combination of **Deep Learning, Neural Networks** enables the development of an automated system for evaluating the effects and enagement predictability of images. This system provides dependable insights for optimizing content.
 ## Authors
-Raj Navalakha - 23205373
+@RajNavalakha29
 
-Gargi Rajadnya - 23200711
+@gargirajadnya
 
 ## Project workflow
 
