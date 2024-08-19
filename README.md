@@ -21,12 +21,22 @@ Dataset obtained through web scraping (social media platform) using tools/websit
 5. hashtags
 
 ### Preprocessing: 
-Image data is obtained from the URLs in the dataset. This data undergoes preprocessing and analysis with essential Python libraries. Pandas is used for manipulating numerical features, numpy handles numerical operations, and image processing is carried out using opencv and PIL.
+Key libraries used:
+1. Pandas for numerical data manipulation
+2. NumPy for numerical operations
+3. OpenCV and PIL for image processing
+
+1. Standardize column names
+2. Check and address missing values (replace empty hashtags with 'NA')
+3. Convert timestamps to a readable format
+4. Clean text data (remove URLs, mentions, punctuation)
+5. Calculate engagement metrics (combine likes and comments)
+6. Filter data based on timestamps
+7. Integrate processed image features with the original dataset
+
+Image data is obtained from the URLs in the dataset. This data undergoes preprocessing and analysis with essential Python libraries. 
 Different image attributes, including sharpness, exposure, colorfulness, vibrancy, symmetry, line detection, and composition, are assessed. These attributes are computed and recorded in a DataFrame, which is subsequently combined with the original dataset for thorough analysis.
-standadize column names
-Checked for missing values
-replacing empty hashtags with 'NA'
-consistency, and timestamps are converted to a readable datetime format
+
 
 ### Manipulation
 
