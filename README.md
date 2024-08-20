@@ -72,6 +72,9 @@ R^2 scores
 
 
 #### Results after converting into a classification problem
+
+![image](https://github.com/user-attachments/assets/e1d77a21-b800-4530-bcbc-ef540c553d02)
+
 #### Confusion matrices for the models
 ![IMG_2503](https://github.com/user-attachments/assets/407299c3-7219-4b8f-b09f-188a65b4f9ee)
 
