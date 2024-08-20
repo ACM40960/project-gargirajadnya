@@ -249,7 +249,7 @@ print("F1 Score:", round(f1_xgb, 3))
 
 #%%
 #function to load and preprocess images
-image_dir = "/Users/gargirajadnya/Documents/Academic/UCD/Trimester 3/Math Modeling/Engagement_dynamics/code/saved_images"
+image_dir = "/Users/project/code/saved_images"
 
 def preprocess_images(shortcodes, image_dir, target_size):
     processed_images = []
