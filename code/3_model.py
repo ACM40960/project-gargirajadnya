@@ -501,6 +501,7 @@ plt.ylabel('Accuracy')
 plt.legend()
 plt.show()
 
+#%%
 # %%
 
 #accuracy F1 plots
