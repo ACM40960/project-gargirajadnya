@@ -62,7 +62,7 @@ For the MLP model, features were extracted from a trained CNN and combined with 
 ### Evaluation:
 Evaluation metrics including accuracy, F1 score, AUC-ROC curve, and confusion matrix were employed to assess and visualize model performance. After reviewing all aspects and balancing the outcomes, XGBoost and MLP showed satisfactory results, though MLP displayed some indications of overfitting. The results could be further improved with higher-quality data, a larger dataset, and potentially exploring alternative methods for handling class imbalance, such as the Synthetic Minority Oversampling Technique (SMOTE).
 
-#### INitial Regression problem results
+#### Initial Regression problem results
 
 RMSE score
 ![IMG_2591](https://github.com/user-attachments/assets/af3d4848-04eb-4c07-b606-4808e7646b76)
