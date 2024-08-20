@@ -101,3 +101,5 @@ Tools used to implement the project were Python, VSCode to integrate the scripts
     ii) 2_data_expl_manip.py: Data exploration and manipulation
    iii) 3_model.py: Training and prediction.
 
+## Conclusion and Results
+Integrating machine learning and deep learning enables the forecasting of engagement patterns for each image within a dataset, providing valuable insights for optimizing content and boosting engagement. While Random Forest, XGBoost, and MLP yield satisfactory results, MLP exhibits some signs of overfitting. The results could be enhanced with higher-quality data, a larger dataset, and possibly a different approach to managing class imbalance, such as using Synthetic Minority Oversampling Technique (SMOTE).
