@@ -502,3 +502,34 @@ plt.legend()
 plt.show()
 
 # %%
+
+#accuracy F1 plots
+models = ['Logistic Regression', 'SVC', 'Decision Tree', 'Random Forest', 'XGBoost', 'MLP']
+accuracy_scores = [accuracy_lr, accuracy_svc, accuracy_dt, accuracy_rf, accuracy_xgb, accuracy_mlp]
+f1_scores = [f1_lr, f1_svc, f1_dt, f1_rf, f1_xgb, f1_mlp]
+#plotting
+plt.figure(figsize=(20, 8), facecolor='#DAD7CD')
+bar_width = 0.4
+indices = np.arange(len(models))
+
+#accuracy bars
+plt.barh(indices, accuracy_scores, height=bar_width, color='darkgreen', label='Accuracy')
+
+#F1 scores bars
+plt.barh(indices + bar_width, f1_scores, height=bar_width, color='lightseagreen', label='F1 Score')
+
+#labels and title
+plt.yticks(indices + bar_width / 2, models)
+plt.xlabel('Score')
+plt.title('Model Performance Comparison (Accuracy vs F1 Score)')
+plt.xlim(0, 1) 
+plt.legend()
+
+for i, (acc, f1) in enumerate(zip(accuracy_scores, f1_scores)):
+    plt.text(acc + 0.01, i, f'{acc:.3f}', va='center', color='darkgreen', fontsize=12)
+    plt.text(f1 + 0.01, i + bar_width, f'{f1:.3f}', va='center', color='lightgreen', fontsize=12)
+
+#plot
+plt.show()
+
+#%%
