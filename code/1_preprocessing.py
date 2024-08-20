@@ -36,7 +36,7 @@ from sklearn.cluster import KMeans
 
 #%%
 #path
-directory_path = '/Users/gargirajadnya/Documents/Academic/UCD/Trimester 3/Math Modeling/Engagement_dynamics/data/raw_data'
+directory_path = '/Users/project/data/raw_data'
 
 def sort_key(raw):
     return int(raw.split('_')[1].split('.')[0])
@@ -194,7 +194,7 @@ sampled_images_df_copy = sampled_images_df.copy()
 sampled_images_df.shape
 
 # %%
-# sampled_images_df.to_csv('/Users/gargirajadnya/Documents/Academic/UCD/Trimester 3/Math Modeling/Engagement_dynamics/data/clean_data.csv', index=False)
+# sampled_images_df.to_csv('/Users/project/clean_data.csv', index=False)
 
 # %%
 #--------------------------------------------------------------------------------------------------------------------------------
@@ -520,7 +520,7 @@ for idx, row in sampled_images_df.iterrows():
     caption = row['caption']
     # image_url = row['display_url']
     #load the saved image
-    image_path = os.path.join("/Users/gargirajadnya/Documents/Academic/UCD/Trimester 3/Math Modeling/Engagement_dynamics/code/saved_images", f"{shortcode}.jpg")
+    image_path = os.path.join("/Users/project/code/saved_images", f"{shortcode}.jpg")
     image = Image.open(image_path)
     # image = download_image(image_url)
 
@@ -709,6 +709,6 @@ final_df.head()
 
 # %%
 #saving as csv
-final_df.to_csv('/Users/gargirajadnya/Documents/Academic/UCD/Trimester 3/Math Modeling/Engagement_dynamics/data/processed_data.csv', index=False)
+final_df.to_csv('/Users/project/data/processed_data.csv', index=False)
 
 #%%

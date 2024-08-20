@@ -43,7 +43,7 @@ from sklearn.model_selection import learning_curve
 #%%
 #read model data
 #without outlier/sampling
-food_df = pd.read_csv('/Users/gargirajadnya/Documents/Academic/UCD/Trimester 3/Math Modeling/Engagement_dynamics/data/food_df.csv')
+food_df = pd.read_csv('/Users/project/data/food_df.csv')
 
 
 #%%

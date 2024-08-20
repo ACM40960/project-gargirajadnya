@@ -23,7 +23,7 @@ import matplotlib.pyplot as plt
 
 #%%
 #reading data
-food_df = pd.read_csv('/Users/gargirajadnya/Documents/Academic/UCD/Trimester 3/Math Modeling/Engagement_dynamics/data/processed_data.csv')
+food_df = pd.read_csv('/Users/project/data/processed_data.csv')
 food_df.head()
 
 #%%
@@ -333,16 +333,16 @@ print(f"Number of new observations added: {new_observations_count}")
 # -------------------------------------------------------------------------
 #save dataframes to train models according to needs
 #original
-food_df.to_csv("/Users/gargirajadnya/Documents/Academic/UCD/Trimester 3/Math Modeling/Engagement_dynamics/data/food_df.csv")
+food_df.to_csv("/Users/project/data/food_df.csv")
 
 #no outliers
-model_df.to_csv("/Users/gargirajadnya/Documents/Academic/UCD/Trimester 3/Math Modeling/Engagement_dynamics/data/model_df.csv")
+model_df.to_csv("/Users/project/data/model_df.csv")
 
 #bootstrapping
-bootstrapped_df.to_csv('/Users/gargirajadnya/Documents/Academic/UCD/Trimester 3/Math Modeling/Engagement_dynamics/data/bootstrapped_df.csv', index=False)
+bootstrapped_df.to_csv('/Users/project/data/bootstrapped_df.csv', index=False)
 
 #outliers-preds, class imbalance- handling
-model_df_balanced.to_csv("/Users/gargirajadnya/Documents/Academic/UCD/Trimester 3/Math Modeling/Engagement_dynamics/data/model_df_balanced.csv")
+model_df_balanced.to_csv("/Users/project/data/model_df_balanced.csv")
 
 
 #%%
