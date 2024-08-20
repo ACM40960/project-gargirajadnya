@@ -62,6 +62,28 @@ For the MLP model, features were extracted from a trained CNN and combined with 
 ### Evaluation:
 Evaluation metrics including accuracy, F1 score, AUC-ROC curve, and confusion matrix were employed to assess and visualize model performance. After reviewing all aspects and balancing the outcomes, XGBoost and MLP showed satisfactory results, though MLP displayed some indications of overfitting. The results could be further improved with higher-quality data, a larger dataset, and potentially exploring alternative methods for handling class imbalance, such as the Synthetic Minority Oversampling Technique (SMOTE).
 
+#### INitial Regression problem results
+
+RMSE score
+![IMG_2591](https://github.com/user-attachments/assets/af3d4848-04eb-4c07-b606-4808e7646b76)
+
+R^2 scores
+![IMG_1305](https://github.com/user-attachments/assets/c6e088a6-1dcf-4410-8853-eb9653e45595)
+
+
+#### Results after converting into a classification problem
+#### Confusion matrices for the models
+![IMG_2503](https://github.com/user-attachments/assets/407299c3-7219-4b8f-b09f-188a65b4f9ee)
+
+![IMG_8766](https://github.com/user-attachments/assets/77af5b69-388e-46a7-acb0-94832b2afd53)
+
+#### AUC-ROC curve for XGBoost and MLP
+![IMG_6644](https://github.com/user-attachments/assets/988b0d5b-07fb-45bc-8b87-55556afe779f)
+
+#### Learning curve of MLP
+![IMG_4904](https://github.com/user-attachments/assets/0286e7bb-b0c2-4f20-9364-2dc668a5cfcc)
+
+
 ## Scope
 This approach could evolve into predicting overall engagement metrics by considering all variables (like caption-sentiment analysis, caption language, no. of hashtags, etc) influencing engagement alongside image aesthetics.
 
